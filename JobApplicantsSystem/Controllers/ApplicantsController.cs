@@ -13,6 +13,7 @@ namespace JobApplicantsSystem.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class ApplicantsController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
