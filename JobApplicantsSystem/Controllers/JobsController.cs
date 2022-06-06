@@ -54,7 +54,7 @@ namespace JobApplicantsSystem.Controllers
         [HttpPut("Update")]
         public async Task<IActionResult> Update(int id ,JobDto dto)
         {
-            var Job = await _unitOfWork.Jobs.GetByIdAsync(id);
+            var Job = a  wait _unitOfWork.Jobs.GetByIdAsync(id);
 
             if (Job == null)
                 return NotFound($"No Job was found with ID {id}");
